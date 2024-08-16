@@ -104,8 +104,17 @@ a{ text-decoration: none; color: inherit;}
 }
 .viewimg a {
   display: block;
+  overflow: hidden;
+  position: relative;
+  min-width: 200px;
+  min-height: 200px
 }
 .viewimg img {
   width: 100%;
   border: none;
+}
+
+iframe{
+  z-index: -1;
+  position: absolute;
 }
